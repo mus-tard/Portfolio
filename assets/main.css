@@ -1,0 +1,199 @@
+/**
+------
+    CSS RESET
+------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* 
+-----------
+Colours 
+-----------
+*/
+
+:root {
+
+    --primary: #1f5774;
+    --primary-light: hsl(200, 100%, 89%);
+    --highlight: #f9a61f;
+    --highlight-light: hsl(37, 55%, 85%);
+    --danger: #a73c52;
+    --danger-light: hsl(348, 27%, 75%);
+    --black: #231f20;
+    --white: #fcfaf9;
+    
+}
+
+/* 
+-----------
+Fonts 
+-----------
+*/
+
+@font-face {
+    font-family: 'Coda-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/Coda-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Coda-ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./fonts/Coda-ExtraBold.ttf') format('truetype');
+}
+
+:root {
+    font-family: 'Coda-Regular', sans-serif;
+
+    --mobile-display-text: 36px;
+    --tablet-display-text: 48px;
+    --desktop-display-text: 96px;
+}
+
+
+/* Mobile: */
+h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+h3{
+    font-size: 20px;
+
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.2;
+}
+button{
+    font-family: 'Coda-Regular', sans-serif;
+    font-size: 18px;
+}
+/* Tablet: */
+@media only screen and (min-width: 500px){
+    h1{
+        font-size: 48px;
+    }
+    
+    h2{
+        font-size: 36px;
+    }
+    
+    h3{
+        font-size: 30px;
+    
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    button{
+        font-size: 24px;
+    }
+}
+/* Desktop */
+/* @media only screen and (min-width: 1024px) {
+    h1{
+
+    }
+    
+    h2{
+    
+    }
+    
+    h3{
+    
+    
+    }
+} */
+
+
+/* 
+-----------
+Fonts end 
+-----------
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+button {
+
+    border: none;
+    cursor: pointer;
+}
+
+.Hero--container {
+    background-color:var(--black);
+    color: var(--white);
+}
+
+.Hero--display-text{
+    font-family: 'Coda-ExtraBold';
+}
+
+.Hero--cta{
+    background-color: var(--highlight);
+    color: var(--black);
+}

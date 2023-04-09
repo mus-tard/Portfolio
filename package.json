@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "nuxt": "^3.3.2"
+  },
+  "dependencies": {
+    "@storyblok/nuxt": "^5.3.4",
+    "storyblok-js-client": "^5.10.2"
   }
 }
