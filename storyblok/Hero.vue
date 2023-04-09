@@ -8,9 +8,9 @@ defineProps({
         <div class="Hero--content">
             <div class="Hero--display-text"> {{ blok.heading }}</div>
             <p class="Hero--paragraph-text"> {{ blok.subheading }}</p>
-            <button class="Hero--cta">
+            <NuxtLink to="/contact" class="Hero--cta">
                  {{ blok.cta }}
-            </button>
+            </NuxtLink>
         </div>
     </div>
     
@@ -37,6 +37,7 @@ defineProps({
     text-align: center;
     cursor: pointer;
     padding: 8px;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 500px){

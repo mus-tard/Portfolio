@@ -1,9 +1,6 @@
 <script setup>
   const story = await useStoryblok('home', {
-    version: "draft", 
-    resolve_relations:'featuredItems.items',
-  },{
-    resolveRelations: 'featuredItems.items',
+    version: "draft"
   })
 
 </script>

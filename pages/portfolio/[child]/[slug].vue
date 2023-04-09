@@ -7,24 +7,18 @@ let parent = ref(route.path.split('/')[1])
 
 const story = await useStoryblok(`portfolio/${child.value}/${route.params.slug}`, {version: "draft"})
 
-
-
-
 </script>
 
 <template>
    <div>
-
-
-  
    
-   <StoryblokComponent 
-    :blok="story.content" 
-    :child="child"
-    :parent="parent"
-    v-if="story"
-  >
-  </StoryblokComponent>
+      <StoryblokComponent 
+      :blok="story.content" 
+      :child="child"
+      :parent="parent"
+      v-if="story"
+   >
+   </StoryblokComponent>
 
    </div>
   

@@ -95,6 +95,27 @@ Fonts
     font-display: swap;
     src: url('./fonts/Coda-ExtraBold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/SourceSansPro-Italic.ttf') format('truetype');
+}
 
 :root {
     font-family: 'Coda-Regular', sans-serif;
@@ -122,11 +143,27 @@ h3{
 p{
     font-size: 18px;
     line-height: 1.2;
+    font-family: 'SourceSansPro', sans-serif;
+
 }
 button{
     font-family: 'Coda-Regular', sans-serif;
     font-size: 18px;
 }
+ul, li {
+    font-size: 18px;     
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+.list-header {
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: 700;
+}
+
+a {
+    font-size: 18px;
+}
+
 /* Tablet: */
 @media only screen and (min-width: 500px){
     h1{
@@ -149,6 +186,15 @@ button{
     button{
         font-size: 24px;
     }
+    ul, li {
+        font-size: 24px;     
+        
+    }
+    a {
+        font-size: 24px;
+    }
+
+   
 }
 /* Desktop */
 /* @media only screen and (min-width: 1024px) {

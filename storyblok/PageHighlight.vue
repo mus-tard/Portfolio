@@ -4,7 +4,7 @@ defineProps({
 })
 
 
-const colorsBkg = ["var(--primary-light)", "var(--primary)", ]
+const colorsBkg = ["var(--white)", "var(--primary)", ]
 const colorsText = ["var(--black)", "var(--white)",]
 const colorsBtn = ["var(--primary)", "var(--white)", ]
 const colorsBtnText = ["var(--white)", "var(--black)",]
@@ -14,6 +14,7 @@ const colorsBtnText = ["var(--white)", "var(--black)",]
 
 
 <div class="PageHighlight--container"  v-editable="blok">
+    
     
     
     <div 
@@ -26,6 +27,7 @@ const colorsBtnText = ["var(--white)", "var(--black)",]
         <div
         v-bind:style="{color: colorsText[index % 2]}"
         >
+        
             <div class="PageHighlight--title">
             <h2>{{ page.name }}</h2>
             </div>
@@ -34,11 +36,15 @@ const colorsBtnText = ["var(--white)", "var(--black)",]
             </div>
         </div>
         
-        <button
-        v-bind:style="{backgroundColor: colorsBtn[index % 2], color: colorsBtnText[index % 2]}"
-        class="PageHighlight--button">
+        <NuxtLink
+            v-bind:style="{backgroundColor: colorsBtn[index % 2], color: colorsBtnText[index % 2]}"
+            class="PageHighlight--button"
+            :to="`/${page.slug}`"
+        >
             {{ page.cta }}
-        </button>
+
+            
+    </NuxtLink>
     </div>
     </div>
        
@@ -75,7 +81,10 @@ const colorsBtnText = ["var(--white)", "var(--black)",]
     }
 
     .PageHighlight--button{
-        min-height: 40px;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
     }
     
     @media only screen and (min-width: 500px){

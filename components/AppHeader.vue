@@ -27,9 +27,10 @@ currentParent.value = route.fullPath.split('/')[1]
 
     <nav v-if="story && menu" class="mobile-nav">
 
-      
+      <!-- <pre>{{ story.content }}</pre> -->
       
       <h1>Menu</h1>
+      
         <ul class="mobile-nav-navList">
           <li 
           v-if="route.path != '/'" 
@@ -51,7 +52,7 @@ currentParent.value = route.fullPath.split('/')[1]
           >
             <NuxtLink 
             @click="toggle" 
-            :to="blok.link.cached_url" 
+            :to="`/${blok.link.cached_url}`" 
             class="mobile-nav-navlink"
             >
               <h2>{{ blok.link.story.name }}</h2>
