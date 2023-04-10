@@ -190,11 +190,12 @@ currentParent.value = route.fullPath.split('/')[1]
       padding: 0 32px;
     }
   }
-  @media only screen and (min-width: 1050px){
+  @media only screen and (min-width: 1024px){
 
    header{
     border-top: 20px var(--primary) solid;
     border-bottom: 20px var(--primary) solid;
+    padding-right: 128px;
    }
 
    .logo{
@@ -228,7 +229,8 @@ currentParent.value = route.fullPath.split('/')[1]
 
     .navlink {
       text-decoration: none;
-      color: var(--black)
+      color: var(--black);
+      
     }
 
     .router-link-exact-active {

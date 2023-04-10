@@ -1,7 +1,7 @@
 
 
 <template>
-    <div>
+    <div class="container">
 
         <AppHeader />
         <NuxtPage/>
@@ -9,3 +9,4 @@
     </div>
     
 </template>
+

@@ -196,7 +196,7 @@ const newDate = function getDateString (inputDate) {
         
     }
 
-    @media only screen and (min-width: 1050px){
+    @media only screen and (min-width: 1024px){
         .intro-content, .involvement, .intro-image, .linkto{
             max-width: 1456px;
             margin: auto;

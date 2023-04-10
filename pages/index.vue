@@ -6,6 +6,12 @@
 </script>
 
 <template>
-    <!-- <pre> {{ story }} </pre> -->
-  <StoryblokComponent :blok="story.content" v-if="story"></StoryblokComponent>
+  <div class="container">
+    <StoryblokComponent :blok="story.content" v-if="story"></StoryblokComponent>
+  </div>
+
 </template>
+
+<style scoped>
+
+</style>

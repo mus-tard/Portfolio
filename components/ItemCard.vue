@@ -22,7 +22,6 @@
                 <h3 class="title">
                 {{ item.title }}
                 </h3>
-                <!-- <p class="description"> {{ item.shortDescription }}</p> -->
             </div>
         </NuxtLink>
 

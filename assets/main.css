@@ -70,6 +70,7 @@ Colours
     --danger: #a73c52;
     --danger-light: hsl(348, 27%, 75%);
     --black: #231f20;
+    --black-light: #828282;
     --white: #fcfaf9;
     
 }
@@ -164,6 +165,10 @@ a {
     font-size: 18px;
 }
 
+input, textarea{
+    font-size: 18px;
+}
+
 /* Tablet: */
 @media only screen and (min-width: 500px){
     h1{
@@ -194,6 +199,9 @@ a {
         font-size: 24px;
     }
 
+    input, textarea{
+        font-size: 24px;
+    }
    
 }
 /* Desktop */

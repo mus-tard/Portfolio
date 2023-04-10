@@ -96,6 +96,9 @@ const colorsBtnText = ["var(--white)", "var(--black)",]
             align-items: center;
         }
         
+        .PageHighlight--highlight{
+            padding: 64px 8px;
+        }
 
         .PageHighlight--container-content{
             max-width: 500px;
@@ -103,14 +106,16 @@ const colorsBtnText = ["var(--white)", "var(--black)",]
             padding: 32px;
         }
     }
-
+    
     @media only screen and (min-width: 1024px) {
         .PageHighlight--container{
             display: flex;
             flex-direction: row;
-
         }
         
+        .PageHighlight--highlight{
+            padding: 128px 16px;
+        }
 
         .PageHighlight--container-content{
             max-width: unset;

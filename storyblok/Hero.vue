@@ -59,7 +59,7 @@ defineProps({
 
 @media only screen and (min-width: 1024px){
     .Hero--container{
-        padding: 64px 40px;
+        padding: 256px 40px;
     }
     .Hero--content{
         max-width: 1456px;
