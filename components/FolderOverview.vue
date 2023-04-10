@@ -4,7 +4,7 @@ const props = defineProps({folder: String})
 let content = ref(null)
 
 const  data  = await storyblokApi.get('cdn/stories', {
-version: 'draft',
+  version: useRoute().query._storyblok ? "draft" : "published",
 starts_with: `portfolio/`,
 is_startpage: false,
 })

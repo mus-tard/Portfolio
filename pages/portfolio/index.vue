@@ -1,7 +1,7 @@
 <script setup>
 
   const story = await useStoryblok('portfolio', {
-    version: "draft", 
+    version: useRoute().query._storyblok ? "draft" : "published", 
     resolve_relations:'featuredItems.items',
   },{
     resolveRelations: 'featuredItems.items',

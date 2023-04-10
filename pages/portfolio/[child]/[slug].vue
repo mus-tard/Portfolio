@@ -5,7 +5,9 @@ const route = useRoute();
 let child = ref(route.path.split('/')[2])
 let parent = ref(route.path.split('/')[1])
 
-const story = await useStoryblok(`portfolio/${child.value}/${route.params.slug}`, {version: "draft"})
+const story = await useStoryblok(`portfolio/${child.value}/${route.params.slug}`, {
+   version: useRoute().query._storyblok ? "draft" : "published",
+})
 
 </script>
 

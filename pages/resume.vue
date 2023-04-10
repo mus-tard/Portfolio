@@ -1,6 +1,6 @@
 <script setup>
   const story = await useStoryblok('resume', {
-    version: "draft"
+    version: useRoute().query._storyblok ? "draft" : "published"
   })
 
 </script>

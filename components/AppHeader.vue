@@ -1,7 +1,8 @@
 <script setup>
 
 
-const story = await useAsyncStoryblok("config", { version: "draft",
+const story = await useAsyncStoryblok("config", { 
+  version: useRoute().query._storyblok ? "draft" : "published",
  resolve_links: 'url',
  },  )
 
@@ -230,7 +231,7 @@ currentParent.value = route.fullPath.split('/')[1]
     .navlink {
       text-decoration: none;
       color: var(--black);
-      
+
     }
 
     .router-link-exact-active {
