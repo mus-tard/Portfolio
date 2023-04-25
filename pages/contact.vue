@@ -12,7 +12,6 @@
                 v-if="story"
             >
             </StoryblokComponent>
-            <ContactForm />
         </div>
 </template>
 
