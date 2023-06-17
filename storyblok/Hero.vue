@@ -8,7 +8,7 @@ defineProps({
         <div class="Hero--content">
             <div class="Hero--display-text"> {{ blok.heading }}</div>
             <p class="Hero--paragraph-text"> {{ blok.subheading }}</p>
-            <NuxtLink to="/contact" class="Hero--cta">
+            <NuxtLink to="/portfolio" class="Hero--cta">
                  {{ blok.cta }}
             </NuxtLink>
         </div>
